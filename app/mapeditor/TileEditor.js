@@ -12,8 +12,8 @@ var tileCtx = tileCanvas.getContext("2d");
 var tileSetImage = new Image();
 tileSetImage.src = tileData.tileSet;
 tileSetImage.onload = function() {
-		tileCanvas.width = tileSetImage.width;
-		tileCanvas.height = tileSetImage.height;
+		tileCanvas.width = tileSetImage.width*.1;
+		tileCanvas.height = tileSetImage.height*.1;
 		update();
 	};
 
@@ -82,9 +82,9 @@ function update()
 	ctx.restore();
 
 	//update selected tile
-	tileCtx.drawImage(tileSetImage, 0, 0);
+	tileCtx.drawImage(tileSetImage, 0, 0, tileSetImage.width*.1, tileSetImage.height*.1);
 	tileCtx.lineWidth = 10;
-	tileCtx.strokeRect(tileData.tiles[currentTile].x*tileSize, tileData.tiles[currentTile].y*tileSize, tileSize, tileSize);
+	tileCtx.strokeRect(tileData.tiles[currentTile].x*tileSize*.1, tileData.tiles[currentTile].y*tileSize*.1, tileSize*.1, tileSize*.1);
 
 	//update selected entity
 	entityCtx.clearRect(0, 0, entityCanvas.width, entityCanvas.height);

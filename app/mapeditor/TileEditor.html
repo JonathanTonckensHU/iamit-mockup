@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>Tile Editor</title>
+<style>
+canvas, html, body
+{
+	margin: 0;
+	padding: 0;
+}
+html, body
+{
+	background-color: gray;
+	font: 15px Verdana;
+}
+.sidebar
+{
+	border-bottom-left-radius: 10px;
+	box-shadow: 10px 10px 5px #333333;
+	background-color: lightgray;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#entitychooser
+{
+	display: none;
+}
+#toolbar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: lightgray;
+	padding: 10px;
+}
+#toolbar textarea
+{
+	width: 100%;
+	height: 35px;
+}
+</style>
+</head>
+<body>
+<canvas width="700" height="540" id="stage">
+Sorry, this browser doesn't support canvas. Try a modern browser instead.
+</canvas>
+<div id="tilechooser">
+<canvas class="sidebar" id="tilechoosercanvas">
+</canvas>
+</div>
+<div class="sidebar" id="entitychooser">
+<canvas id="entitychoosercanvas">
+</canvas>
+</div>
+<div id="toolbar">
+Use WASD and the left, middle and right mouse button. Press space to swith modes.
+<textarea id="output">
+</textarea>
+</div>
+<script src="TileLib.js"></script>
+<script src="tiledata.js"></script>
+<script src="TileEditor.js"></script>
+</body>
+</html>

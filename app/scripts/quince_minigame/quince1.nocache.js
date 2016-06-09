@@ -1,5 +1,5 @@
 function quince1(){
-  var $intern_0 = '', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_60 = '.cache.html', $intern_12 = '/', $intern_24 = '//', $intern_54 = '26374B5766A22B11E663EDA553183917', $intern_55 = '498B89B6A4C8FE57EA6CF10C30D6B809', $intern_56 = '741ABD29387C599D95EA1A06B5196E0A', $intern_59 = ':', $intern_28 = '::', $intern_68 = '<script defer="defer">quince1.onInjectionDone(\'quince1\')<\/script>', $intern_20 = '<script id="', $intern_31 = '=', $intern_11 = '?', $intern_33 = 'Bad handler "', $intern_57 = 'CC7FF0C4961A10342C8CA1B30EC586A8', $intern_58 = 'D506CD42FCD031B619C323AA90E17B56', $intern_67 = 'DOMContentLoaded', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_quince1', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_14 = 'clear.cache.gif', $intern_30 = 'content', $intern_9 = 'end', $intern_48 = 'gecko', $intern_49 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_61 = 'gwt/clean/clean.css', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_66 = 'head', $intern_52 = 'hosted.html?quince1', $intern_65 = 'href', $intern_45 = 'ie10', $intern_47 = 'ie8', $intern_46 = 'ie9', $intern_37 = 'iframe', $intern_13 = 'img', $intern_38 = "javascript:''", $intern_62 = 'link', $intern_51 = 'loadExternalRefs', $intern_25 = 'meta', $intern_40 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_44 = 'msie', $intern_26 = 'name', $intern_39 = 'position:absolute;width:0;height:0;border:none', $intern_1 = 'quince1', $intern_17 = 'quince1.nocache.js', $intern_27 = 'quince1::', $intern_63 = 'rel', $intern_43 = 'safari', $intern_16 = 'script', $intern_53 = 'selectingPermutation', $intern_2 = 'startup', $intern_64 = 'stylesheet', $intern_18 = 'undefined', $intern_50 = 'unknown', $intern_41 = 'user.agent', $intern_42 = 'webkit';
+  var $intern_0 = '', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_60 = '.cache.html', $intern_12 = '/', $intern_24 = '//', $intern_54 = '1D4750D10468A6AC3A570F6FCD0ED0ED', $intern_55 = '3D7C777615C5674C58BC01C4428D476A', $intern_56 = '4356492F7AC375D88D41648B0F3318E0', $intern_57 = '5D13D215C4E4C8A36995C215FB7CC3A0', $intern_58 = '6B87519CC69535AD395BA1A9B287BA0B', $intern_59 = ':', $intern_28 = '::', $intern_62 = '<script defer="defer">quince1.onInjectionDone(\'quince1\')<\/script>', $intern_20 = '<script id="', $intern_31 = '=', $intern_11 = '?', $intern_33 = 'Bad handler "', $intern_61 = 'DOMContentLoaded', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_quince1', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_14 = 'clear.cache.gif', $intern_30 = 'content', $intern_9 = 'end', $intern_48 = 'gecko', $intern_49 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_52 = 'hosted.html?quince1', $intern_45 = 'ie10', $intern_47 = 'ie8', $intern_46 = 'ie9', $intern_37 = 'iframe', $intern_13 = 'img', $intern_38 = "javascript:''", $intern_51 = 'loadExternalRefs', $intern_25 = 'meta', $intern_40 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_44 = 'msie', $intern_26 = 'name', $intern_39 = 'position:absolute;width:0;height:0;border:none', $intern_1 = 'quince1', $intern_17 = 'quince1.nocache.js', $intern_27 = 'quince1::', $intern_43 = 'safari', $intern_16 = 'script', $intern_53 = 'selectingPermutation', $intern_2 = 'startup', $intern_18 = 'undefined', $intern_50 = 'unknown', $intern_41 = 'user.agent', $intern_42 = 'webkit';
   var $wnd = window, $doc = document, $stats = $wnd.__gwtStatsEvent?function(a){
     return $wnd.__gwtStatsEvent(a);
   }
@@ -293,11 +293,11 @@ function quince1(){
   $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_53});
   if (!isHostedMode()) {
     try {
-      unflattenKeylistIntoAnswers([$intern_47], $intern_54);
-      unflattenKeylistIntoAnswers([$intern_45], $intern_55);
-      unflattenKeylistIntoAnswers([$intern_49], $intern_56);
+      unflattenKeylistIntoAnswers([$intern_46], $intern_54);
+      unflattenKeylistIntoAnswers([$intern_47], $intern_55);
+      unflattenKeylistIntoAnswers([$intern_45], $intern_56);
       unflattenKeylistIntoAnswers([$intern_43], $intern_57);
-      unflattenKeylistIntoAnswers([$intern_46], $intern_58);
+      unflattenKeylistIntoAnswers([$intern_49], $intern_58);
       strongName = answers[computePropValue($intern_41)];
       var idx = strongName.indexOf($intern_59);
       if (idx != -1) {
@@ -314,16 +314,9 @@ function quince1(){
   function onBodyDone(){
     if (!bodyDone) {
       bodyDone = true;
-      if (!__gwt_stylesLoaded[$intern_61]) {
-        var l = $doc.createElement($intern_62);
-        __gwt_stylesLoaded[$intern_61] = l;
-        l.setAttribute($intern_63, $intern_64);
-        l.setAttribute($intern_65, base + $intern_61);
-        $doc.getElementsByTagName($intern_66)[0].appendChild(l);
-      }
       maybeStartModule();
       if ($doc.removeEventListener) {
-        $doc.removeEventListener($intern_67, onBodyDone, false);
+        $doc.removeEventListener($intern_61, onBodyDone, false);
       }
       if (onBodyDoneTimerId) {
         clearInterval(onBodyDoneTimerId);
@@ -332,7 +325,7 @@ function quince1(){
   }
 
   if ($doc.addEventListener) {
-    $doc.addEventListener($intern_67, function(){
+    $doc.addEventListener($intern_61, function(){
       maybeInjectFrame();
       onBodyDone();
     }
@@ -347,7 +340,7 @@ function quince1(){
   , 50);
   $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_9});
   $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_51, millis:(new Date).getTime(), type:$intern_4});
-  $doc.write($intern_68);
+  $doc.write($intern_62);
 }
 
 quince1();

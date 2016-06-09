@@ -4,7 +4,7 @@ var $gwt_version = "2.6.0";
 var $wnd = parent;
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
-var $strongName = '741ABD29387C599D95EA1A06B5196E0A';
+var $strongName = '6B87519CC69535AD395BA1A9B287BA0B';
 var $stats = $wnd.__gwtStatsEvent ? function(a) {return $wnd.__gwtStatsEvent(a);} : null,
 $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
 $stats && $stats({moduleName:'quince1',sessionId:$sessionId,subSystem:'startup',evtGroup:'moduleStartup',millis:(new Date()).getTime(),type:'moduleEvalStart'});
@@ -1624,11 +1624,11 @@ function com_google_gwt_canvas_client_Canvas_$getCanvasElement__Lcom_google_gwt_
 }
 
 function com_google_gwt_canvas_client_Canvas_$setCoordinateSpaceHeight__Lcom_google_gwt_canvas_client_Canvas_2IV(this$static){
-  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).height = 480;
+  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).height = 400;
 }
 
 function com_google_gwt_canvas_client_Canvas_$setCoordinateSpaceWidth__Lcom_google_gwt_canvas_client_Canvas_2IV(this$static){
-  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).width = 640;
+  (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_google_gwt_user_client_ui_UIObject_element).width = 560;
 }
 
 function com_google_gwt_canvas_client_Canvas_Canvas__Lcom_google_gwt_dom_client_CanvasElement_2V(element){
@@ -5513,6 +5513,7 @@ function com_iamprogrez_quince1_client_Quince1_$execute__Lcom_iamprogrez_quince1
   if (this$static.com_iamprogrez_quince1_client_Quince1_runningGame) {
     dt = timestamp - this$static.com_iamprogrez_quince1_client_Quince1_lastUpdateTimestamp;
     this$static.com_iamprogrez_quince1_client_Quince1_remainingUpdateTime += dt;
+    this$static.com_iamprogrez_quince1_client_Quince1_remainingUpdateTime > 1000 && (this$static.com_iamprogrez_quince1_client_Quince1_remainingUpdateTime = 17);
     while (this$static.com_iamprogrez_quince1_client_Quince1_remainingUpdateTime > 16) {
       com_iamprogrez_quince1_model_AbstractMap_$update__Lcom_iamprogrez_quince1_model_AbstractMap_2V(this$static.com_iamprogrez_quince1_client_Quince1_map);
       this$static.com_iamprogrez_quince1_client_Quince1_remainingUpdateTime -= 16;
@@ -5533,7 +5534,7 @@ function com_iamprogrez_quince1_client_Quince1_$execute__Lcom_iamprogrez_quince1
       }
     }
   }
-  com_iamprogrez_quince1_model_AbstractMap_$render__Lcom_iamprogrez_quince1_model_AbstractMap_2Lcom_google_gwt_canvas_dom_client_Context2d_2V(this$static.com_iamprogrez_quince1_client_Quince1_map, this$static.com_iamprogrez_quince1_client_Quince1_ctx);
+  com_iamprogrez_quince1_model_AbstractMap_$render__Lcom_iamprogrez_quince1_model_AbstractMap_2Lcom_google_gwt_canvas_dom_client_Context2d_2IIV(this$static.com_iamprogrez_quince1_client_Quince1_map, this$static.com_iamprogrez_quince1_client_Quince1_ctx, com_google_gwt_canvas_client_Canvas_$getCanvasElement__Lcom_google_gwt_canvas_client_Canvas_2Lcom_google_gwt_dom_client_CanvasElement_2(this$static.com_iamprogrez_quince1_client_Quince1_canvas).width, com_google_gwt_canvas_client_Canvas_$getCanvasElement__Lcom_google_gwt_canvas_client_Canvas_2Lcom_google_gwt_dom_client_CanvasElement_2(this$static.com_iamprogrez_quince1_client_Quince1_canvas).height);
   this$static.com_iamprogrez_quince1_client_Quince1_lastUpdateTimestamp = timestamp;
   (com_google_gwt_animation_client_AnimationSchedulerImpl_$clinit__V() , com_google_gwt_animation_client_AnimationSchedulerImpl_INSTANCE).requestAnimationFrame__Lcom_google_gwt_animation_client_AnimationScheduler$AnimationCallback_2Lcom_google_gwt_dom_client_Element_2Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2(this$static, (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_iamprogrez_quince1_client_Quince1_canvas.com_google_gwt_user_client_ui_UIObject_element));
 }
@@ -5550,7 +5551,7 @@ function com_iamprogrez_quince1_client_Quince1_$onModuleLoad__Lcom_iamprogrez_qu
   this$static.com_iamprogrez_quince1_client_Quince1_canvas = com_google_gwt_canvas_client_Canvas_createIfSupported__Lcom_google_gwt_canvas_client_Canvas_2();
   com_google_gwt_canvas_client_Canvas_$setCoordinateSpaceWidth__Lcom_google_gwt_canvas_client_Canvas_2IV(this$static.com_iamprogrez_quince1_client_Quince1_canvas);
   com_google_gwt_canvas_client_Canvas_$setCoordinateSpaceHeight__Lcom_google_gwt_canvas_client_Canvas_2IV(this$static.com_iamprogrez_quince1_client_Quince1_canvas);
-  com_google_gwt_user_client_ui_UIObject_$setPixelSize__Lcom_google_gwt_user_client_ui_UIObject_2IIV(this$static.com_iamprogrez_quince1_client_Quince1_canvas, 640, 480);
+  com_google_gwt_user_client_ui_UIObject_$setPixelSize__Lcom_google_gwt_user_client_ui_UIObject_2IIV(this$static.com_iamprogrez_quince1_client_Quince1_canvas, 560, 400);
   this$static.com_iamprogrez_quince1_client_Quince1_ctx = com_google_gwt_canvas_client_Canvas_$getCanvasElement__Lcom_google_gwt_canvas_client_Canvas_2Lcom_google_gwt_dom_client_CanvasElement_2(this$static.com_iamprogrez_quince1_client_Quince1_canvas).getContext($intern_62);
   com_google_gwt_user_client_ui_AbsolutePanel_$add__Lcom_google_gwt_user_client_ui_AbsolutePanel_2Lcom_google_gwt_user_client_ui_Widget_2V(rp, this$static.com_iamprogrez_quince1_client_Quince1_canvas);
   com_google_gwt_dom_client_Node_$appendChild__Lcom_google_gwt_dom_client_Node_2Lcom_google_gwt_dom_client_Node_2Lcom_google_gwt_dom_client_Node_2(canvasContainerEl, (com_google_gwt_user_client_DOM_$clinit__V() , this$static.com_iamprogrez_quince1_client_Quince1_canvas.com_google_gwt_user_client_ui_UIObject_element));
@@ -5776,26 +5777,38 @@ function com_iamprogrez_quince1_model_AbstractMap_$parseJSON__Lcom_iamprogrez_qu
   }
   this$static.com_iamprogrez_quince1_model_AbstractMap_entities = new java_util_ArrayList_ArrayList__V;
   this$static.com_iamprogrez_quince1_model_AbstractMap_tiles = com_google_gwt_lang_Array_initDims___3Ljava_lang_Class_2_3Lcom_google_gwt_core_client_JavaScriptObject_2_3I_3IIILcom_google_gwt_lang_Array_2([com_google_gwt_lang_ClassLiteralHolder__13_13Lcom_1iamprogrez_1quince1_1model_1Tile_12_1classLit, com_google_gwt_lang_ClassLiteralHolder__13Lcom_1iamprogrez_1quince1_1model_1Tile_12_1classLit], [makeCastMap([Q$java_io_Serializable, Q$java_lang_Object_$1]), makeCastMap([Q$com_iamprogrez_quince1_model_Tile_$1, Q$java_io_Serializable, Q$java_io_Serializable_$1, Q$java_lang_Comparable_$1, Q$java_lang_Enum_$1, Q$java_lang_Object_$1])], [Q$com_iamprogrez_quince1_model_Tile_$1, Q$com_iamprogrez_quince1_model_Tile], [jsonMap.map.length, com_iamprogrez_quince1_model_JSONMap_$getHeight__Lcom_iamprogrez_quince1_model_JSONMap_2I(jsonMap)], 2, 0);
-  for (x_0 = 0; x_0 < jsonMap.map.length; x_0++) {
+  for (x0 = 0; x0 < jsonMap.map.length; x0++) {
     for (y_0 = 0; y_0 < com_iamprogrez_quince1_model_JSONMap_$getHeight__Lcom_iamprogrez_quince1_model_JSONMap_2I(jsonMap); y_0++) {
-      this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x_0][y_0] = (com_iamprogrez_quince1_model_Tile_$clinit__V() , com_iamprogrez_quince1_model_Tile_$clinit__V() , com_iamprogrez_quince1_model_Tile_$VALUES)[jsonMap.map[x_0][y_0]];
+      this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x0][y_0] = (com_iamprogrez_quince1_model_Tile_$clinit__V() , com_iamprogrez_quince1_model_Tile_$clinit__V() , com_iamprogrez_quince1_model_Tile_$VALUES)[jsonMap.map[x0][y_0]];
     }
   }
-  for (x0 = 0; x0 < jsonMap.entities.length; x0++) {
-    com_iamprogrez_quince1_model_AvatarMap_$initEntity__Lcom_iamprogrez_quince1_model_AvatarMap_2IDDV(this$static, jsonMap.entities[x0].id, jsonMap.entities[x0].x / 289, jsonMap.entities[x0].y / 289);
+  for (x_0 = 0; x_0 < jsonMap.entities.length; x_0++) {
+    com_iamprogrez_quince1_model_AvatarMap_$initEntity__Lcom_iamprogrez_quince1_model_AvatarMap_2IDDV(this$static, jsonMap.entities[x_0].id, jsonMap.entities[x_0].x / 289, jsonMap.entities[x_0].y / 289);
   }
 }
 
-function com_iamprogrez_quince1_model_AbstractMap_$render__Lcom_iamprogrez_quince1_model_AbstractMap_2Lcom_google_gwt_canvas_dom_client_Context2d_2V(this$static, ctx){
-  var e, e$iterator, t, tileset, x_0, y_0;
+function com_iamprogrez_quince1_model_AbstractMap_$render__Lcom_iamprogrez_quince1_model_AbstractMap_2Lcom_google_gwt_canvas_dom_client_Context2d_2IIV(this$static, ctx, canvasWidth, canvasHeight){
+  var bg, bgScale, e, e$iterator, scale, t, tileset, x_0, x0, y_0;
   com_google_gwt_canvas_dom_client_Context2d_$save__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx);
-  com_google_gwt_canvas_dom_client_Context2d_$scale__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, 0.16, 0.16);
-  com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDV(ctx, com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2('background.png'), 0, 0);
+  scale = java_lang_Math_min__DDD(canvasWidth / (289 * this$static.com_iamprogrez_quince1_model_AbstractMap_tiles.length), canvasHeight / (289 * this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[0].length));
+  bg = com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2('background-mini.png');
+  if (bg.width > 0) {
+    bgScale = java_lang_Math_max__DDD(scale * 10, canvasHeight / bg.height);
+    com_google_gwt_canvas_dom_client_Context2d_$scale__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, bgScale, bgScale);
+    for (x_0 = 0; x_0 < canvasWidth / bgScale; x_0 += bg.width) {
+      com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDV(ctx, bg, x_0, canvasHeight / bgScale - bg.height);
+    }
+  }
+  com_google_gwt_canvas_dom_client_Context2d_$restore__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx);
+  com_google_gwt_canvas_dom_client_Context2d_$save__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx);
+  com_google_gwt_canvas_dom_client_Context2d_$translate__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, canvasWidth / 2, canvasHeight);
+  com_google_gwt_canvas_dom_client_Context2d_$scale__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, scale, scale);
+  com_google_gwt_canvas_dom_client_Context2d_$translate__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, -this$static.com_iamprogrez_quince1_model_AbstractMap_tiles.length * 0.5 * 289, -this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[0].length * 289);
   tileset = com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2('tileset.png');
-  for (x_0 = 0; x_0 < this$static.com_iamprogrez_quince1_model_AbstractMap_tiles.length; x_0++) {
-    for (y_0 = 0; y_0 < this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x_0].length; y_0++) {
-      t = this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x_0][y_0];
-      com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDDDDDDDV(ctx, tileset, t.java_lang_Enum_ordinal * 289, 0, 289, 289, x_0 * 289, y_0 * 289, 289, 289);
+  for (x0 = 0; x0 < this$static.com_iamprogrez_quince1_model_AbstractMap_tiles.length; x0++) {
+    for (y_0 = 0; y_0 < this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x0].length; y_0++) {
+      t = this$static.com_iamprogrez_quince1_model_AbstractMap_tiles[x0][y_0];
+      com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDDDDDDDV(ctx, tileset, t.java_lang_Enum_ordinal * 289, 0, 289, 289, x0 * 289, y_0 * 289, 289, 289);
     }
   }
   for (e$iterator = new java_util_AbstractList$IteratorImpl_AbstractList$IteratorImpl__Ljava_util_AbstractList_2V(this$static.com_iamprogrez_quince1_model_AbstractMap_entities); e$iterator.java_util_AbstractList$IteratorImpl_i < e$iterator.java_util_AbstractList$IteratorImpl_this$0.size__I();) {
@@ -5890,16 +5903,18 @@ function com_iamprogrez_quince1_model_Avatar_Avatar__DDLcom_iamprogrez_quince1_m
   this.com_iamprogrez_quince1_model_PhysicsEntity_ySpeed = 0;
   this.com_iamprogrez_quince1_model_Avatar_instructions = instructions;
   this.com_iamprogrez_quince1_model_Avatar_direction = true;
+  this.com_iamprogrez_quince1_model_Avatar_currentFrame = 0;
 }
 
 com_google_gwt_lang_SeedUtil_defineSeed__IILcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2(230, 231, makeCastMap([Q$com_iamprogrez_quince1_model_Avatar, Q$com_iamprogrez_quince1_model_Entity]), com_iamprogrez_quince1_model_Avatar_Avatar__DDLcom_iamprogrez_quince1_model_AbstractMap_2Ljava_util_List_2V);
 _.render__Lcom_google_gwt_canvas_dom_client_Context2d_2V = function com_iamprogrez_quince1_model_Avatar_render__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx){
-  var img;
-  img = com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2('entityicons.png');
+  var frame_0, img;
+  img = com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2('avatar_strip13.png');
   com_google_gwt_canvas_dom_client_Context2d_$save__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx);
   com_google_gwt_canvas_dom_client_Context2d_$translate__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, this.com_iamprogrez_quince1_model_Entity_x * 289, this.com_iamprogrez_quince1_model_Entity_y * 289 - ~~(img.height / 2));
   com_google_gwt_canvas_dom_client_Context2d_$scale__Lcom_google_gwt_canvas_dom_client_Context2d_2DDV(ctx, this.com_iamprogrez_quince1_model_Avatar_direction?1:-1, 1);
-  com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDV(ctx, img, ~~(-img.width / 2), 0);
+  frame_0 = com_google_gwt_lang_Cast_round_1int__DI(this.com_iamprogrez_quince1_model_Avatar_currentFrame);
+  com_google_gwt_canvas_dom_client_Context2d_$drawImage__Lcom_google_gwt_canvas_dom_client_Context2d_2Lcom_google_gwt_dom_client_ImageElement_2DDDDDDDDV(ctx, img, frame_0 * 185, 0, 185, 278, ~~(-img.width / 26), 0, 289, 289);
   com_google_gwt_canvas_dom_client_Context2d_$restore__Lcom_google_gwt_canvas_dom_client_Context2d_2V(ctx);
 }
 ;
@@ -5913,8 +5928,13 @@ _.update__V = function com_iamprogrez_quince1_model_Avatar_update__V(){
   }
   com_iamprogrez_quince1_model_PhysicsEntity_$setX__Lcom_iamprogrez_quince1_model_PhysicsEntity_2DV(this, this.com_iamprogrez_quince1_model_Entity_x + this.com_iamprogrez_quince1_model_PhysicsEntity_xSpeed);
   com_iamprogrez_quince1_model_PhysicsEntity_$setY__Lcom_iamprogrez_quince1_model_PhysicsEntity_2DV(this, this.com_iamprogrez_quince1_model_Entity_y + this.com_iamprogrez_quince1_model_PhysicsEntity_ySpeed);
+  if (com_iamprogrez_quince1_model_AbstractMap_$tileAt__Lcom_iamprogrez_quince1_model_AbstractMap_2DDLcom_iamprogrez_quince1_model_Tile_2(this.com_iamprogrez_quince1_model_PhysicsEntity_map, this.com_iamprogrez_quince1_model_Entity_x, this.com_iamprogrez_quince1_model_Entity_y + this.com_iamprogrez_quince1_model_Entity_height * 0.55).com_iamprogrez_quince1_model_Tile_solid && this.com_iamprogrez_quince1_model_PhysicsEntity_xSpeed != 0) {
+    this.com_iamprogrez_quince1_model_Avatar_currentFrame += 0.3;
+    this.com_iamprogrez_quince1_model_Avatar_currentFrame = this.com_iamprogrez_quince1_model_Avatar_currentFrame % 13;
+  }
 }
 ;
+_.com_iamprogrez_quince1_model_Avatar_currentFrame = 0;
 _.com_iamprogrez_quince1_model_Avatar_direction = false;
 function com_iamprogrez_quince1_model_AvatarMap_$initEntity__Lcom_iamprogrez_quince1_model_AvatarMap_2IDDV(this$static, id_0, x_0, y_0){
   var avatar;
@@ -6034,6 +6054,8 @@ _.getName__Ljava_lang_String_2 = function com_iamprogrez_quince1_model_IfInAir_g
   return 'If in air';
 }
 ;
+--></script>
+<script><!--
 _.isTrue__Lcom_iamprogrez_quince1_model_Avatar_2Z = function com_iamprogrez_quince1_model_IfInAir_isTrue__Lcom_iamprogrez_quince1_model_Avatar_2Z(avatar){
   return !com_iamprogrez_quince1_model_AbstractMap_$tileAt__Lcom_iamprogrez_quince1_model_AbstractMap_2DDLcom_iamprogrez_quince1_model_Tile_2(avatar.com_iamprogrez_quince1_model_PhysicsEntity_map, avatar.com_iamprogrez_quince1_model_Entity_x, avatar.com_iamprogrez_quince1_model_Entity_y + avatar.com_iamprogrez_quince1_model_Entity_height * 0.55).com_iamprogrez_quince1_model_Tile_solid;
 }
@@ -6064,8 +6086,6 @@ function com_iamprogrez_quince1_model_ImageLoader_$clinit__V(){
   com_iamprogrez_quince1_model_ImageLoader_images = new java_util_HashMap_HashMap__V;
 }
 
---></script>
-<script><!--
 function com_iamprogrez_quince1_model_ImageLoader_load__Ljava_lang_String_2Lcom_google_gwt_dom_client_ImageElement_2(name_0){
   com_iamprogrez_quince1_model_ImageLoader_$clinit__V();
   var ie;
@@ -6474,6 +6494,8 @@ _.hashCode__I$ = function java_lang_Integer_hashCode__I(){
   return this.java_lang_Integer_value;
 }
 ;
+--></script>
+<script><!--
 _.toString__Ljava_lang_String_2$ = function java_lang_Integer_toString__Ljava_lang_String_2(){
   return $intern_24 + this.java_lang_Integer_value;
 }
@@ -6493,8 +6515,16 @@ function java_lang_Math_abs__II(x_0){
   return x_0 < 0?-x_0:x_0;
 }
 
+function java_lang_Math_max__DDD(x_0, y_0){
+  return x_0 > y_0?x_0:y_0;
+}
+
 function java_lang_Math_max__III(x_0, y_0){
   return x_0 > y_0?x_0:y_0;
+}
+
+function java_lang_Math_min__DDD(x_0, y_0){
+  return x_0 < y_0?x_0:y_0;
 }
 
 function java_lang_Math_min__III(x_0, y_0){
@@ -6510,8 +6540,6 @@ function java_lang_NullPointerException_NullPointerException__Ljava_lang_String_
 }
 
 com_google_gwt_lang_SeedUtil_defineSeed__IILcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2(260, 57, makeCastMap([Q$java_io_Serializable, Q$java_lang_Exception, Q$java_lang_Throwable]), java_lang_NullPointerException_NullPointerException__V, java_lang_NullPointerException_NullPointerException__Ljava_lang_String_2V);
---></script>
-<script><!--
 function java_lang_Number$_1_1Digits_$clinit__V(){
   java_lang_Number$_1_1Digits_$clinit__V = nullMethod;
   java_lang_Number$_1_1Digits_digits = com_google_gwt_lang_Array_initValues__Ljava_lang_Class_2Lcom_google_gwt_core_client_JavaScriptObject_2ILcom_google_gwt_lang_Array_2Lcom_google_gwt_lang_Array_2(com_google_gwt_lang_ClassLiteralHolder__13C_1classLit, makeCastMap([Q$java_io_Serializable]), -1, [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]);
@@ -6963,6 +6991,8 @@ _.equals__Ljava_lang_Object_2Z$ = function java_util_AbstractSet_equals__Ljava_l
   return true;
 }
 ;
+--></script>
+<script><!--
 _.hashCode__I$ = function java_util_AbstractSet_hashCode__I(){
   var hashCode, iter, next;
   hashCode = 0;
@@ -7002,8 +7032,6 @@ _.iterator__Ljava_util_Iterator_2 = function java_util_AbstractHashMap$EntrySet_
   return new java_util_AbstractHashMap$EntrySetIterator_AbstractHashMap$EntrySetIterator__Ljava_util_AbstractHashMap_2V(this.java_util_AbstractHashMap$EntrySet_this$0);
 }
 ;
---></script>
-<script><!--
 _.size__I = function java_util_AbstractHashMap$EntrySet_size__I(){
   return this.java_util_AbstractHashMap$EntrySet_this$0.java_util_AbstractHashMap_size;
 }
@@ -7427,6 +7455,8 @@ function java_util_Date_padTwo__ILjava_lang_String_2(number){
   return number < 10?$intern_68 + number:$intern_24 + number;
 }
 
+--></script>
+<script><!--
 com_google_gwt_lang_SeedUtil_defineSeed__IILcom_google_gwt_core_client_JavaScriptObject_2Lcom_google_gwt_core_client_JavaScriptObject_2(287, 1, makeCastMap([Q$java_io_Serializable, Q$java_lang_Comparable, Q$java_util_Date]), java_util_Date_Date__V);
 _.compareTo__Ljava_lang_Object_2I$ = function java_util_Date_compareTo__Ljava_lang_Object_2I(other){
   return java_util_Date_$compareTo__Ljava_util_Date_2Ljava_util_Date_2I(this, com_google_gwt_lang_Cast_dynamicCast__Ljava_lang_Object_2ILjava_lang_Object_2(other, Q$java_util_Date));
@@ -7442,8 +7472,6 @@ _.hashCode__I$ = function java_util_Date_hashCode__I(){
   return com_google_gwt_lang_LongLib_toInt__Lcom_google_gwt_lang_LongLibBase$LongEmul_2I(com_google_gwt_lang_LongLib_xor__Lcom_google_gwt_lang_LongLibBase$LongEmul_2Lcom_google_gwt_lang_LongLibBase$LongEmul_2Lcom_google_gwt_lang_LongLibBase$LongEmul_2(time, com_google_gwt_lang_LongLib_shru__Lcom_google_gwt_lang_LongLibBase$LongEmul_2ILcom_google_gwt_lang_LongLibBase$LongEmul_2(time, 32)));
 }
 ;
---></script>
-<script><!--
 _.toString__Ljava_lang_String_2$ = function java_util_Date_toString__Ljava_lang_String_2(){
   var hourOffset, minuteOffset, offset;
   offset = -this.java_util_Date_jsdate.getTimezoneOffset();

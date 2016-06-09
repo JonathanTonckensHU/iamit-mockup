@@ -1,12 +1,40 @@
 <md-card flex="90" style="padding:0;">
-
+  <style>
+    .dragdrop-draggable {
+       background-color: rgba(63,81,181,.9);
+       color: rgba(255,255,255,0.87);
+       margin-top: 2px;
+       margin-bottom: 2px;
+       padding: 2px;
+       padding-left: 5px;
+       font-size: 18px;
+    }
+    .subinstructions
+    {
+    	margin-left: 30px;
+    	margin-right: 10px;
+    	border: 5px solid white;
+	background-color: white;
+    	min-width: 40px;
+    	min-height: 20px;
+	margin-bottom: 2px;
+    }
+    #quince-bin {
+	text-align: center;
+	background-color: rgb(63,81,181);
+	color: rgba(255,255,255,0.87);
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12px;
+    }
+  </style>
   <md-toolbar>
     <div class="md-toolbar-tools">
       <h2>Minigame</h2>
     </div>
   </md-toolbar>
 
-  <md-content layout-margin layout-gt-md="row" layout="column" layout-align="center center" id="quince1_div">
+  <md-content layout-margin layout-gt-md="row" layout="column" layout-align="center center" id="quince1_div" style="overflow: hidden;">
     <md-card style="padding: 10px;">
 	<div id="quince-canvas"></div>
 	<div id="quince-buttons"></div>
